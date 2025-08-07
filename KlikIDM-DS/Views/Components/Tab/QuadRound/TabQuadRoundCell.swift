@@ -160,6 +160,7 @@ class TabQuadRoundCell: UICollectionViewCell {
     }
 
     private func unselectedFixedTab() {
+        lblTab.textColor = UIColor.blue50
         lblTab.font = UIFont.systemFont(ofSize: 10, weight: .medium)
         vTab.backgroundColor = UIColor.blue20
         vTabBackground.backgroundColor = UIColor.blue20

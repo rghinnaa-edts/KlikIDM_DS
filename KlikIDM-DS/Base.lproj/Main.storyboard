@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u2K-Qu-chF"/>
+                        <segue destination="Lwr-0s-GBa" kind="relationship" relationship="rootViewController" id="nlr-al-bGW"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J49-Qm-D7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -26,48 +26,40 @@
             <point key="canvasLocation" x="-447" y="-13"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="5vX-3C-LeB">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KlikIDM_DS_UiKit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VYV-QO-24N">
+                <viewController id="Lwr-0s-GBa" customClass="ViewController" customModule="KlikIDM_DS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VPb-lG-PJd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZE-2n-XeO">
-                                <rect key="frame" x="0.0" y="162" width="393" height="34.333333333333343"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lb-VS-FaF">
-                                        <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="PromoFairPage"/>
-                                        <connections>
-                                            <action selector="GoToPromo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdt-7B-0h7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waf-MQ-Ucc">
-                                        <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="CartPage"/>
-                                        <connections>
-                                            <action selector="GoToCart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UTf-yU-ggi"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEE-Rs-4Pz">
+                                <rect key="frame" x="19" y="162" width="149" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Promo Gift Page"/>
+                                <connections>
+                                    <action selector="GoToPromo:" destination="Lwr-0s-GBa" eventType="touchUpInside" id="CVl-5m-56b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWg-pk-9pj">
+                                <rect key="frame" x="246" y="162" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cart Page"/>
+                                <connections>
+                                    <action selector="GoToCart:" destination="Lwr-0s-GBa" eventType="touchUpInside" id="N7o-ud-6vr"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="ISo-hc-ZL6"/>
+                        <viewLayoutGuide key="safeArea" id="fpt-Py-mLV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ISo-hc-ZL6" firstAttribute="trailing" secondItem="6ZE-2n-XeO" secondAttribute="trailing" id="5xD-7w-nH1"/>
-                            <constraint firstItem="6ZE-2n-XeO" firstAttribute="top" secondItem="ISo-hc-ZL6" secondAttribute="top" id="v8x-xS-Voz"/>
-                            <constraint firstItem="6ZE-2n-XeO" firstAttribute="leading" secondItem="ISo-hc-ZL6" secondAttribute="leading" id="xU5-Xa-6zf"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fcS-oE-d6a"/>
+                    <navigationItem key="navigationItem" id="ZF9-ij-aXh"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4G-gN-Qqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300" y="-13"/>
+            <point key="canvasLocation" x="305" y="-13"/>
         </scene>
     </scenes>
     <resources>

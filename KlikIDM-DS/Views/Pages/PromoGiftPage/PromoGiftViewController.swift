@@ -194,10 +194,10 @@ class PromoGiftViewController: UIViewController {
         tabItems = [
             TabQuadRoundModel(id: "1", title: "Tebus Murah", badge: 3),
             TabQuadRoundModel(id: "2", title: "Cuci Gudang 2025", badge: 1),
-//            TabQuadRoundModel(id: "3", title: "Hadiah Produk", badge: 3),
-//            TabQuadRoundModel(id: "4", title: "Get Kupon", badge: 1),
-//            TabQuadRoundModel(id: "5", title: "Tebus Murah", badge: 3),
-//            TabQuadRoundModel(id: "6", title: "Cuci Gudang", badge: 1)
+            TabQuadRoundModel(id: "3", title: "Hadiah Produk", badge: 3),
+            TabQuadRoundModel(id: "4", title: "Get Kupon", badge: 1),
+            TabQuadRoundModel(id: "5", title: "Tebus Murah", badge: 3),
+            TabQuadRoundModel(id: "6", title: "Cuci Gudang", badge: 1)
         ]
         
         items1 = [
