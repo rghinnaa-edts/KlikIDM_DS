@@ -20,7 +20,7 @@ KlikIDM-DS is an iOS SDK that contains components and animations that can be use
 ### CocoaPods
 ```ruby
 target 'MyApp' do
-  pod 'KlikIDM-DS-UIKit'
+  pod 'KlikIDM-DS'
 end
 ```
 
