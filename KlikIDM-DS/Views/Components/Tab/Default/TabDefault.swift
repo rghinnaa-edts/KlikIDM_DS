@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabDefault: UIView {
+public class TabDefault: UIView {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet var collectionView: UICollectionView!

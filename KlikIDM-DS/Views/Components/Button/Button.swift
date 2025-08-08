@@ -7,6 +7,6 @@
 
 import UIKit
 
-class Button: UIButton {
+public class Button: UIButton {
     
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Skeleton: UIView {
+public class Skeleton: UIView {
     private let gradientLayer = CAGradientLayer()
     private let shimmerAnimation: CABasicAnimation
     

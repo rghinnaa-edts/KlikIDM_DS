@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabQuadRound: UIView {
+public class TabQuadRound: UIView {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet var collectionView: UICollectionView!
