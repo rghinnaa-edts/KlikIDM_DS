@@ -17,7 +17,7 @@ public class Skeleton: UIView {
         }
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         shimmerAnimation = CABasicAnimation(keyPath: "locations")
         shimmerAnimation.fromValue = [-1.0, -0.5, 0.0]
         shimmerAnimation.toValue = [1.0, 1.5, 2.0]
@@ -29,7 +29,7 @@ public class Skeleton: UIView {
         updateCornerRadius()
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         shimmerAnimation = CABasicAnimation(keyPath: "locations")
         shimmerAnimation.fromValue = [-1.0, -0.5, 0.0]
         shimmerAnimation.toValue = [1.0, 1.5, 2.0]
@@ -61,17 +61,17 @@ public class Skeleton: UIView {
         gradientLayer.cornerRadius = cornerRadius
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         gradientLayer.frame = bounds
         updateCornerRadius()
     }
     
-    func startShimmer() {
+    public func startShimmer() {
         gradientLayer.add(shimmerAnimation, forKey: "shimmerAnimation")
     }
     
-    func stopShimmer() {
+    public func stopShimmer() {
         gradientLayer.removeAnimation(forKey: "shimmerAnimation")
     }
 }

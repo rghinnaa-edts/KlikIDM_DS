@@ -42,17 +42,17 @@ public class TabDefault: UIView {
     private var maxWidth: CGFloat = 200
     private var horizontalPadding: CGFloat = 16
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setupChip()
     }
 
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupChip()
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
         DispatchQueue.main.async {
@@ -103,22 +103,29 @@ public class TabDefault: UIView {
         collectionView.dataSource = self
     }
     
-    func registerCellType<T: UICollectionViewCell>(_ cellClass: T.Type, withIdentifier identifier: String) {
+    private func calculateDynamicWidth(for text: String, font: UIFont = UIFont.systemFont(ofSize: 14)) -> CGFloat {
+        let textSize = text.size(withAttributes: [.font: font])
+        let calculatedWidth = textSize.width + horizontalPadding
+        
+        return max(minWidth, min(maxWidth, calculatedWidth))
+    }
+    
+    public func registerCellType<T: UICollectionViewCell>(_ cellClass: T.Type, withIdentifier identifier: String) {
         cellType = cellClass
         cellIdentifier = identifier
         collectionView.register(cellClass, forCellWithReuseIdentifier: identifier)
     }
     
-    func setData<T: TabDefaultModelProtocol>(_ tabData: [T]) {
+    public func setData<T: TabDefaultModelProtocol>(_ tabData: [T]) {
         self.data = tabData
     }
     
-    func setSize(width: CGFloat, height: CGFloat) {
+    public func setSize(width: CGFloat, height: CGFloat) {
         self.width = width
         self.height = height
     }
     
-    func setItemPadding(topPadding: CGFloat = 0, leadingPadding: CGFloat = 16, bottomPadding: CGFloat = 0, trailingPadding: CGFloat = 16, itemSpacing: CGFloat = 12) {
+    public func setItemPadding(topPadding: CGFloat = 0, leadingPadding: CGFloat = 16, bottomPadding: CGFloat = 0, trailingPadding: CGFloat = 16, itemSpacing: CGFloat = 12) {
         self.itemSpacing = itemSpacing
         self.topPadding = topPadding
         self.leadingPadding = leadingPadding
@@ -128,7 +135,7 @@ public class TabDefault: UIView {
         setupUI()
     }
     
-    func setDynamicWidth(enabled: Bool, minWidth: CGFloat = 60, maxWidth: CGFloat = 200, horizontalPadding: CGFloat = 16) {
+    public func setDynamicWidth(enabled: Bool, minWidth: CGFloat = 60, maxWidth: CGFloat = 200, horizontalPadding: CGFloat = 16) {
         self.useDynamicWidth = enabled
         self.minWidth = minWidth
         self.maxWidth = maxWidth
@@ -137,22 +144,15 @@ public class TabDefault: UIView {
         setupUI()
     }
     
-    func enableDynamicWidth() {
+    public func enableDynamicWidth() {
         setDynamicWidth(enabled: true)
     }
     
-    func disableDynamicWidth() {
+    public func disableDynamicWidth() {
         setDynamicWidth(enabled: false)
     }
     
-    private func calculateDynamicWidth(for text: String, font: UIFont = UIFont.systemFont(ofSize: 14)) -> CGFloat {
-        let textSize = text.size(withAttributes: [.font: font])
-        let calculatedWidth = textSize.width + horizontalPadding
-        
-        return max(minWidth, min(maxWidth, calculatedWidth))
-    }
-    
-    func selectDefaultChip() {
+    public func selectDefaultChip() {
         guard !data.isEmpty else { return }
                 
         let defaultSelectedIndexPath = IndexPath(item: 0, section: 0)
@@ -179,26 +179,26 @@ public class TabDefault: UIView {
 }
 
 @MainActor
-protocol TabDefaultDelegate: AnyObject {
+public protocol TabDefaultDelegate: AnyObject {
     func didSelectTabDefault(at index: Int, withId id: String)
 }
 
-protocol TabDefaultModelProtocol {
+public protocol TabDefaultModelProtocol {
     var id: String { get }
     var title: String { get }
 }
 
-protocol TabDefaultCellProtocol: UICollectionViewCell {
+public protocol TabDefaultCellProtocol: UICollectionViewCell {
     func loadData(item: TabDefaultModelProtocol)
     var isSelectedState: Bool { get set }
 }
 
 extension TabDefault: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath)
         
@@ -212,7 +212,7 @@ extension TabDefault: UICollectionViewDelegate, UICollectionViewDataSource, UICo
         
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if useDynamicWidth {
             let displayText = data[indexPath.item].title
@@ -223,7 +223,7 @@ extension TabDefault: UICollectionViewDelegate, UICollectionViewDataSource, UICo
         return CGSize(width: width, height: height)
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         for index in 0..<data.count {
             let deselectIndexPath = IndexPath(item: index, section: 0)
             if let cell = collectionView.cellForItem(at: deselectIndexPath) as? TabDefaultCellProtocol {

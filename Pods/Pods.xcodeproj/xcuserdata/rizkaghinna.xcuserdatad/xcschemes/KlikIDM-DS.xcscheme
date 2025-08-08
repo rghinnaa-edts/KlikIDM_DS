@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C8B6D6FB9FDD488745FA6489C92F4326"
-               BuildableName = "KlikIDM-DS"
+               BuildableName = "KlikIDM_DS.framework"
                BlueprintName = "KlikIDM-DS"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

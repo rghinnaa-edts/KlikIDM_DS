@@ -1,6 +1,6 @@
 {
   "name": "KlikIDM-DS",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "summary": "UI Components and Animation",
   "description": "UI Components and Animation of Klik Indomaret Apps",
   "homepage": "https://github.com/rghinnaa-edts/KlikIDM-DS",
@@ -17,10 +17,10 @@
   "swift_versions": "5.0",
   "source": {
     "git": "https://github.com/rghinnaa-edts/KlikIDM-DS.git",
-    "tag": "0.1.0"
+    "tag": "0.1.3"
   },
-  "source_files": "KlikIDM-DS-UiKit/**/*.{h,m,swift}",
-  "resources": "KlikIDM-DS-UIKit/**/*.{xcassets,png,jpg,jpeg,pdf,json}",
+  "source_files": "KlikIDM-DS/**/*.{h,m,swift}",
+  "resources": "KlikIDM-DS/**/*.{xib,storyboard,xcassets,png,jpg,jpeg}",
   "frameworks": "UIKit",
   "swift_version": "5.0"
 }

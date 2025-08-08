@@ -1,5 +1,5 @@
 PODS:
-  - KlikIDM-DS (0.1.0)
+  - KlikIDM-DS (0.1.3)
 
 DEPENDENCIES:
   - KlikIDM-DS (from `../KlikIDM-DS`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../KlikIDM-DS"
 
 SPEC CHECKSUMS:
-  KlikIDM-DS: 9e9c1aec226b68605d52ee4c5caae13231e2baa1
+  KlikIDM-DS: c55c916245d3bb5139c7d76b8184b84b407512ed
 
 PODFILE CHECKSUM: 2f422d701652eab080d4fcae5249fb9a68d3e44f
 

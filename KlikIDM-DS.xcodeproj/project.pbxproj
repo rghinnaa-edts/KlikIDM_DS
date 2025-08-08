@@ -151,6 +151,7 @@
 				50A2B7CA2E4341E2007A4AE3 /* Sources */,
 				50A2B7CB2E4341E2007A4AE3 /* Frameworks */,
 				50A2B7CC2E4341E2007A4AE3 /* Resources */,
+				0EDF37FB077BEFBA053A96B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +277,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0EDF37FB077BEFBA053A96B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM-DS/Pods-KlikIDM-DS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM-DS/Pods-KlikIDM-DS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KlikIDM-DS/Pods-KlikIDM-DS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3C054907582B9C3DF0981399 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

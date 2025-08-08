@@ -23,17 +23,17 @@ public class TabQuadRound: UIView {
         }
     }
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setupTab()
     }
 
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupTab()
     }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
 
         DispatchQueue.main.async {
@@ -175,7 +175,7 @@ public class TabQuadRound: UIView {
         collectionView.reloadData()
     }
 
-    func selectTab(at index: Int) {
+    public func selectTab(at index: Int) {
         guard index >= 0 && index < data.count else { return }
 
         currentlySelectedIndex = index
@@ -233,28 +233,28 @@ public class TabQuadRound: UIView {
         }
     }
 
-    func setData(_ tabData: [TabQuadRoundModel]) {
+    public func setData(_ tabData: [TabQuadRoundModel]) {
         self.data = tabData
     }
 }
 
-struct TabQuadRoundModel {
+public struct TabQuadRoundModel {
     var id: String
     var title: String
     var badge: Int
 }
 
 @MainActor
-protocol TabQuadRoundDelegate: AnyObject {
+public protocol TabQuadRoundDelegate: AnyObject {
     func didSelectTabQuadRound(at index: Int, withId id: String)
 }
 
 extension TabQuadRound: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TabQuadRoundCell", for: indexPath) as! TabQuadRoundCell
 
@@ -295,7 +295,7 @@ extension TabQuadRound: UICollectionViewDelegate, UICollectionViewDataSource, UI
         return cell
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
         let tabData = data[indexPath.item]
         let isSelected = tabData.id == currentlySelectedId
@@ -322,7 +322,7 @@ extension TabQuadRound: UICollectionViewDelegate, UICollectionViewDataSource, UI
         }
     }
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
         let selectedData = data[indexPath.item]
         currentlySelectedId = selectedData.id
