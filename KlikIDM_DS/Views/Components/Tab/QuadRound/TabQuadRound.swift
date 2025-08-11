@@ -12,11 +12,11 @@ public class TabQuadRound: UIView {
     @IBOutlet var containerView: UIView!
     @IBOutlet var collectionView: UICollectionView!
     
-    weak var delegate: TabQuadRoundDelegate?
-    var currentlySelectedId: String? = nil
-    var currentlySelectedIndex: Int? = nil
+    public weak var delegate: TabQuadRoundDelegate?
+    public var currentlySelectedId: String? = nil
+    public var currentlySelectedIndex: Int? = nil
 
-    var data: [TabQuadRoundModel] = [] {
+    public var data: [TabQuadRoundModel] = [] {
         didSet {
             collectionView.reloadData()
             updateScrollSettings()

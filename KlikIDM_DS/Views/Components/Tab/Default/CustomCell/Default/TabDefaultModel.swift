@@ -5,7 +5,7 @@
 //  Created by Rizka Ghinna Auliya on 10/05/25.
 //
 
-struct TabDefaultModel: TabDefaultModelProtocol {
-    var id: String
-    var title: String
+public struct TabDefaultModel: TabDefaultModelProtocol {
+    public var id: String
+    public var title: String
 }

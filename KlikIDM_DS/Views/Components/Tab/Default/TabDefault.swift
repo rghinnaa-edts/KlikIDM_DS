@@ -12,20 +12,20 @@ public class TabDefault: UIView {
     @IBOutlet var containerView: UIView!
     @IBOutlet var collectionView: UICollectionView!
 
-    weak var delegate: TabDefaultDelegate?
+    public weak var delegate: TabDefaultDelegate?
     
-    private var cellIdentifier: String = ""
-    private var cellType: AnyClass = TabDefaultCell.self
-    
-    var viewCell: UICollectionViewCell? = nil
-    private var _data: [TabDefaultModelProtocol] = []
-    var data: [TabDefaultModelProtocol] = [] {
+    public var viewCell: UICollectionViewCell? = nil
+    public var data: [TabDefaultModelProtocol] = [] {
         didSet {
             _data = data
             collectionView.reloadData()
         }
     }
-    var currentlySelectedBucketId: String? = nil
+    public var currentlySelectedBucketId: String? = nil
+    
+    private var _data: [TabDefaultModelProtocol] = []
+    private var cellIdentifier: String = ""
+    private var cellType: AnyClass = TabDefaultCell.self
     
     private var width: CGFloat = 0
     private var height: CGFloat = 0

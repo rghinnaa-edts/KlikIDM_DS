@@ -1,6 +1,6 @@
-# KlikIDM-DS
+# KlikIDM_DS
 
-KlikIDM-DS is an iOS SDK that contains components and animations that can be used to help developers design user interfaces based on the Klik Indomaret Design System.
+KlikIDM_DS is an iOS SDK that contains components and animations that can be used to help developers design user interfaces based on the Klik Indomaret Design System.
 
 ## Dependencies
 - Support iOS version from 12.0
@@ -20,7 +20,7 @@ KlikIDM-DS is an iOS SDK that contains components and animations that can be use
 ### CocoaPods
 ```ruby
 target 'MyApp' do
-  pod 'KlikIDM-DS'
+  pod 'KlikIDM_DS'
 end
 ```
 

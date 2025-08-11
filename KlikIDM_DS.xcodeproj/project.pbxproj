@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50A2B92F2E44645A007A4AE3 /* KlikIDM-DS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 50A2B92E2E446451007A4AE3 /* KlikIDM-DS.podspec */; };
+		50A2B92F2E44645A007A4AE3 /* KlikIDM_DS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 50A2B92E2E446451007A4AE3 /* KlikIDM_DS.podspec */; };
 		CCFC5D2F8C84381A16A98567 /* Pods_KlikIDM_DS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE9F5D0C077C3C5CDA874C3 /* Pods_KlikIDM_DS.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,41 +30,47 @@
 
 /* Begin PBXFileReference section */
 		0EE9F5D0C077C3C5CDA874C3 /* Pods_KlikIDM_DS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KlikIDM_DS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50A2B7CE2E4341E2007A4AE3 /* KlikIDM-DS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KlikIDM-DS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50A2B7E42E4341E5007A4AE3 /* KlikIDM-DSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KlikIDM-DSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50A2B7EE2E4341E5007A4AE3 /* KlikIDM-DSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KlikIDM-DSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50A2B92E2E446451007A4AE3 /* KlikIDM-DS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "KlikIDM-DS.podspec"; sourceTree = "<group>"; };
+		50A2B7CE2E4341E2007A4AE3 /* KlikIDM_DS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KlikIDM_DS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A2B7E42E4341E5007A4AE3 /* KlikIDM_DSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlikIDM_DSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A2B7EE2E4341E5007A4AE3 /* KlikIDM_DSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlikIDM_DSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A2B92E2E446451007A4AE3 /* KlikIDM_DS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KlikIDM_DS.podspec; sourceTree = "<group>"; };
 		854AA0A2F8FC6FF28B65D73C /* Pods-KlikIDM-DS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM-DS.release.xcconfig"; path = "Target Support Files/Pods-KlikIDM-DS/Pods-KlikIDM-DS.release.xcconfig"; sourceTree = "<group>"; };
+		8690CE451369698488AB0039 /* Pods-KlikIDM_DS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM_DS.release.xcconfig"; path = "Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS.release.xcconfig"; sourceTree = "<group>"; };
+		DACD0C03B747E99A1D35BA81 /* Pods-KlikIDM_DS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM_DS.debug.xcconfig"; path = "Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS.debug.xcconfig"; sourceTree = "<group>"; };
 		E5500D139A39871A091D8D33 /* Pods-KlikIDM-DS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM-DS.debug.xcconfig"; path = "Target Support Files/Pods-KlikIDM-DS/Pods-KlikIDM-DS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		50A2B7F62E4341E5007A4AE3 /* Exceptions for "KlikIDM-DS" folder in "KlikIDM-DS" target */ = {
+		50A2B7F62E4341E5007A4AE3 /* Exceptions for "KlikIDM_DS" folder in "KlikIDM_DS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 50A2B7CD2E4341E2007A4AE3 /* KlikIDM-DS */;
+			target = 50A2B7CD2E4341E2007A4AE3 /* KlikIDM_DS */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		50A2B7D02E4341E2007A4AE3 /* KlikIDM-DS */ = {
+		50A2B7D02E4341E2007A4AE3 /* KlikIDM_DS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				50A2B7F62E4341E5007A4AE3 /* Exceptions for "KlikIDM-DS" folder in "KlikIDM-DS" target */,
+				50A2B7F62E4341E5007A4AE3 /* Exceptions for "KlikIDM_DS" folder in "KlikIDM_DS" target */,
 			);
-			path = "KlikIDM-DS";
+			path = KlikIDM_DS;
 			sourceTree = "<group>";
 		};
-		50A2B7E72E4341E5007A4AE3 /* KlikIDM-DSTests */ = {
+		50A2B7E72E4341E5007A4AE3 /* KlikIDM_DSTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "KlikIDM-DSTests";
+			exceptions = (
+			);
+			path = KlikIDM_DSTests;
 			sourceTree = "<group>";
 		};
-		50A2B7F12E4341E5007A4AE3 /* KlikIDM-DSUITests */ = {
+		50A2B7F12E4341E5007A4AE3 /* KlikIDM_DSUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "KlikIDM-DSUITests";
+			exceptions = (
+			);
+			path = KlikIDM_DSUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -106,10 +112,10 @@
 		50A2B7C52E4341E2007A4AE3 = {
 			isa = PBXGroup;
 			children = (
-				50A2B92E2E446451007A4AE3 /* KlikIDM-DS.podspec */,
-				50A2B7D02E4341E2007A4AE3 /* KlikIDM-DS */,
-				50A2B7E72E4341E5007A4AE3 /* KlikIDM-DSTests */,
-				50A2B7F12E4341E5007A4AE3 /* KlikIDM-DSUITests */,
+				50A2B92E2E446451007A4AE3 /* KlikIDM_DS.podspec */,
+				50A2B7D02E4341E2007A4AE3 /* KlikIDM_DS */,
+				50A2B7E72E4341E5007A4AE3 /* KlikIDM_DSTests */,
+				50A2B7F12E4341E5007A4AE3 /* KlikIDM_DSUITests */,
 				50A2B7CF2E4341E2007A4AE3 /* Products */,
 				86AD923C032A21AA3AAD3574 /* Pods */,
 				2FFE9B82A0D3F16F34C62CC3 /* Frameworks */,
@@ -119,9 +125,9 @@
 		50A2B7CF2E4341E2007A4AE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50A2B7CE2E4341E2007A4AE3 /* KlikIDM-DS.app */,
-				50A2B7E42E4341E5007A4AE3 /* KlikIDM-DSTests.xctest */,
-				50A2B7EE2E4341E5007A4AE3 /* KlikIDM-DSUITests.xctest */,
+				50A2B7CE2E4341E2007A4AE3 /* KlikIDM_DS.app */,
+				50A2B7E42E4341E5007A4AE3 /* KlikIDM_DSTests.xctest */,
+				50A2B7EE2E4341E5007A4AE3 /* KlikIDM_DSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +137,8 @@
 			children = (
 				E5500D139A39871A091D8D33 /* Pods-KlikIDM-DS.debug.xcconfig */,
 				854AA0A2F8FC6FF28B65D73C /* Pods-KlikIDM-DS.release.xcconfig */,
+				DACD0C03B747E99A1D35BA81 /* Pods-KlikIDM_DS.debug.xcconfig */,
+				8690CE451369698488AB0039 /* Pods-KlikIDM_DS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -138,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50A2B7CD2E4341E2007A4AE3 /* KlikIDM-DS */ = {
+		50A2B7CD2E4341E2007A4AE3 /* KlikIDM_DS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50A2B7F72E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM-DS" */;
+			buildConfigurationList = 50A2B7F72E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM_DS" */;
 			buildPhases = (
 				3C054907582B9C3DF0981399 /* [CP] Check Pods Manifest.lock */,
 				50A2B7CA2E4341E2007A4AE3 /* Sources */,
@@ -153,16 +161,16 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				50A2B7D02E4341E2007A4AE3 /* KlikIDM-DS */,
+				50A2B7D02E4341E2007A4AE3 /* KlikIDM_DS */,
 			);
-			name = "KlikIDM-DS";
+			name = KlikIDM_DS;
 			productName = "KlikIDM-DS";
-			productReference = 50A2B7CE2E4341E2007A4AE3 /* KlikIDM-DS.app */;
+			productReference = 50A2B7CE2E4341E2007A4AE3 /* KlikIDM_DS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		50A2B7E32E4341E5007A4AE3 /* KlikIDM-DSTests */ = {
+		50A2B7E32E4341E5007A4AE3 /* KlikIDM_DSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50A2B7FC2E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM-DSTests" */;
+			buildConfigurationList = 50A2B7FC2E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM_DSTests" */;
 			buildPhases = (
 				50A2B7E02E4341E5007A4AE3 /* Sources */,
 				50A2B7E12E4341E5007A4AE3 /* Frameworks */,
@@ -174,16 +182,16 @@
 				50A2B7E62E4341E5007A4AE3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				50A2B7E72E4341E5007A4AE3 /* KlikIDM-DSTests */,
+				50A2B7E72E4341E5007A4AE3 /* KlikIDM_DSTests */,
 			);
-			name = "KlikIDM-DSTests";
+			name = KlikIDM_DSTests;
 			productName = "KlikIDM-DSTests";
-			productReference = 50A2B7E42E4341E5007A4AE3 /* KlikIDM-DSTests.xctest */;
+			productReference = 50A2B7E42E4341E5007A4AE3 /* KlikIDM_DSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		50A2B7ED2E4341E5007A4AE3 /* KlikIDM-DSUITests */ = {
+		50A2B7ED2E4341E5007A4AE3 /* KlikIDM_DSUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50A2B7FF2E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM-DSUITests" */;
+			buildConfigurationList = 50A2B7FF2E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM_DSUITests" */;
 			buildPhases = (
 				50A2B7EA2E4341E5007A4AE3 /* Sources */,
 				50A2B7EB2E4341E5007A4AE3 /* Frameworks */,
@@ -195,11 +203,11 @@
 				50A2B7F02E4341E5007A4AE3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				50A2B7F12E4341E5007A4AE3 /* KlikIDM-DSUITests */,
+				50A2B7F12E4341E5007A4AE3 /* KlikIDM_DSUITests */,
 			);
-			name = "KlikIDM-DSUITests";
+			name = KlikIDM_DSUITests;
 			productName = "KlikIDM-DSUITests";
-			productReference = 50A2B7EE2E4341E5007A4AE3 /* KlikIDM-DSUITests.xctest */;
+			productReference = 50A2B7EE2E4341E5007A4AE3 /* KlikIDM_DSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -225,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 50A2B7C92E4341E2007A4AE3 /* Build configuration list for PBXProject "KlikIDM-DS" */;
+			buildConfigurationList = 50A2B7C92E4341E2007A4AE3 /* Build configuration list for PBXProject "KlikIDM_DS" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -239,9 +247,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50A2B7CD2E4341E2007A4AE3 /* KlikIDM-DS */,
-				50A2B7E32E4341E5007A4AE3 /* KlikIDM-DSTests */,
-				50A2B7ED2E4341E5007A4AE3 /* KlikIDM-DSUITests */,
+				50A2B7CD2E4341E2007A4AE3 /* KlikIDM_DS */,
+				50A2B7E32E4341E5007A4AE3 /* KlikIDM_DSTests */,
+				50A2B7ED2E4341E5007A4AE3 /* KlikIDM_DSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50A2B92F2E44645A007A4AE3 /* KlikIDM-DS.podspec in Resources */,
+				50A2B92F2E44645A007A4AE3 /* KlikIDM_DS.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,19 +286,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM-DS/Pods-KlikIDM-DS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM-DS/Pods-KlikIDM-DS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KlikIDM-DS/Pods-KlikIDM-DS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3C054907582B9C3DF0981399 /* [CP] Check Pods Manifest.lock */ = {
@@ -308,7 +312,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KlikIDM-DS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KlikIDM_DS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -344,12 +348,12 @@
 /* Begin PBXTargetDependency section */
 		50A2B7E62E4341E5007A4AE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50A2B7CD2E4341E2007A4AE3 /* KlikIDM-DS */;
+			target = 50A2B7CD2E4341E2007A4AE3 /* KlikIDM_DS */;
 			targetProxy = 50A2B7E52E4341E5007A4AE3 /* PBXContainerItemProxy */;
 		};
 		50A2B7F02E4341E5007A4AE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50A2B7CD2E4341E2007A4AE3 /* KlikIDM-DS */;
+			target = 50A2B7CD2E4341E2007A4AE3 /* KlikIDM_DS */;
 			targetProxy = 50A2B7EF2E4341E5007A4AE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -357,15 +361,17 @@
 /* Begin XCBuildConfiguration section */
 		50A2B7F82E4341E5007A4AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5500D139A39871A091D8D33 /* Pods-KlikIDM-DS.debug.xcconfig */;
+			baseConfigurationReference = DACD0C03B747E99A1D35BA81 /* Pods-KlikIDM_DS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MHKJ3B9LJR;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/KlikIDM_DS\"";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "KlikIDM-DS/Info.plist";
+				INFOPLIST_FILE = KlikIDM_DS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -377,8 +383,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.edts.KlikIDM-DS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edts.KlikIDM_DS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,15 +394,17 @@
 		};
 		50A2B7F92E4341E5007A4AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 854AA0A2F8FC6FF28B65D73C /* Pods-KlikIDM-DS.release.xcconfig */;
+			baseConfigurationReference = 8690CE451369698488AB0039 /* Pods-KlikIDM_DS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MHKJ3B9LJR;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/KlikIDM_DS\"";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "KlikIDM-DS/Info.plist";
+				INFOPLIST_FILE = KlikIDM_DS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -407,8 +416,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.edts.KlikIDM-DS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edts.KlikIDM_DS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,11 +478,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KlikIDM_DS/Info.plist;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edts.KlikIDM_DS;
+				PRODUCT_NAME = KlikIDM_DS;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -526,10 +541,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KlikIDM_DS/Info.plist;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edts.KlikIDM_DS;
+				PRODUCT_NAME = KlikIDM_DS;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -551,7 +571,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KlikIDM-DS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KlikIDM-DS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KlikIDM_DS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KlikIDM_DS";
 			};
 			name = Debug;
 		};
@@ -570,7 +590,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KlikIDM-DS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KlikIDM-DS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KlikIDM_DS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KlikIDM_DS";
 			};
 			name = Release;
 		};
@@ -611,7 +631,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50A2B7C92E4341E2007A4AE3 /* Build configuration list for PBXProject "KlikIDM-DS" */ = {
+		50A2B7C92E4341E2007A4AE3 /* Build configuration list for PBXProject "KlikIDM_DS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50A2B7FA2E4341E5007A4AE3 /* Debug */,
@@ -620,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50A2B7F72E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM-DS" */ = {
+		50A2B7F72E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM_DS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50A2B7F82E4341E5007A4AE3 /* Debug */,
@@ -629,7 +649,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50A2B7FC2E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM-DSTests" */ = {
+		50A2B7FC2E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM_DSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50A2B7FD2E4341E5007A4AE3 /* Debug */,
@@ -638,7 +658,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50A2B7FF2E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM-DSUITests" */ = {
+		50A2B7FF2E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM_DSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50A2B8002E4341E5007A4AE3 /* Debug */,
