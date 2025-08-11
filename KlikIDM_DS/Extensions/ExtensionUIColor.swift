@@ -225,8 +225,8 @@ extension UIColor {
     struct Gradient {
         static let sunset = UIKitGradient(
             colors: [
-                UIColor(named: "Sunset-Start") ?? .systemOrange,
-                UIColor(named: "Sunset-End") ?? .systemRed
+                UIColor(named: "Sunset-Leading") ?? .systemOrange,
+                UIColor(named: "Sunset-Trailing") ?? .systemRed
             ],
             startPoint: .leading,
             endPoint: .trailing
@@ -234,8 +234,8 @@ extension UIColor {
         
         static let skyblue = UIKitGradient(
             colors: [
-                UIColor(named: "Skyblue-Start") ?? .systemBlue,
-                UIColor(named: "Skyblue-End") ?? .systemTeal
+                UIColor(named: "Skyblue-Leading") ?? .systemBlue,
+                UIColor(named: "Skyblue-Trailing") ?? .systemTeal
             ],
             startPoint: .leading,
             endPoint: .trailing
@@ -243,8 +243,8 @@ extension UIColor {
         
         static let greenforest = UIKitGradient(
             colors: [
-                UIColor(named: "Greenforest-Start") ?? .systemGreen,
-                UIColor(named: "Greenforest-End") ?? .systemGreen
+                UIColor(named: "Greenforest-Leading") ?? .systemGreen,
+                UIColor(named: "Greenforest-Trailing") ?? .systemGreen
             ],
             startPoint: .leading,
             endPoint: .trailing
@@ -252,8 +252,8 @@ extension UIColor {
         
         static let sunflower = UIKitGradient(
             colors: [
-                UIColor(named: "Sunflower-Start") ?? .systemYellow,
-                UIColor(named: "Sunflower-End") ?? .systemOrange
+                UIColor(named: "Sunflower-Leading") ?? .systemYellow,
+                UIColor(named: "Sunflower-Trailing") ?? .systemOrange
             ],
             startPoint: .leading,
             endPoint: .trailing
