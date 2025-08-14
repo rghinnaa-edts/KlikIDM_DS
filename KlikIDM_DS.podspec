@@ -12,6 +12,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
   
   spec.source       = { :git => "https://github.com/rghinnaa-edts/KlikIDM_DS.git", :tag => spec.version.to_s }
+  spec.source       = { :path => "", :tag => spec.version.to_s }
   spec.source_files = "KlikIDM_DS/**/*.{h,m,swift}"
   spec.resources    = "KlikIDM_DS/**/*.{xib,storyboard,xcassets,png,jpg,jpeg}"
   

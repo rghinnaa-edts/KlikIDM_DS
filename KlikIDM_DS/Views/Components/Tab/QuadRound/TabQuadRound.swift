@@ -242,6 +242,12 @@ public struct TabQuadRoundModel {
     var id: String
     var title: String
     var badge: Int
+    
+    public init(id: String, title: String, badge: Int) {
+        self.id = id
+        self.title = title
+        self.badge = badge
+    }
 }
 
 @MainActor

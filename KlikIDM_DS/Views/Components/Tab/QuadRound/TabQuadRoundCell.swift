@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabQuadRoundCell: UICollectionViewCell {
+public class TabQuadRoundCell: UICollectionViewCell {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet var vTab: UIView!
@@ -20,15 +20,15 @@ class TabQuadRoundCell: UICollectionViewCell {
     @IBOutlet var vWidthConstraint: NSLayoutConstraint!
     @IBOutlet var vHeightConstraint: NSLayoutConstraint!
     
-    var shouldUseEqualWidth: Bool = false
-    var customWidth: CGFloat = 86
-    var totalTabCount: Int = 0
+    public var shouldUseEqualWidth: Bool = false
+    public var customWidth: CGFloat = 86
+    public var totalTabCount: Int = 0
 
-    var isSelectedState: Bool = false { didSet { updateAppearanceIfNeeded() } }
-    var isBeforeSelectedState: Bool = false { didSet { updateAppearanceIfNeeded() } }
-    var isAfterSelectedState: Bool = false { didSet { updateAppearanceIfNeeded() } }
-    var isFirstItem: Bool = false { didSet { updateAppearanceIfNeeded() } }
-    var isLastItem: Bool = false { didSet { updateAppearanceIfNeeded() } }
+    public var isSelectedState: Bool = false { didSet { updateAppearanceIfNeeded() } }
+    public var isBeforeSelectedState: Bool = false { didSet { updateAppearanceIfNeeded() } }
+    public var isAfterSelectedState: Bool = false { didSet { updateAppearanceIfNeeded() } }
+    public var isFirstItem: Bool = false { didSet { updateAppearanceIfNeeded() } }
+    public var isLastItem: Bool = false { didSet { updateAppearanceIfNeeded() } }
 
     private var isEnable: Bool = true
     private let animationDuration: TimeInterval = 0.2
@@ -334,7 +334,7 @@ class TabQuadRoundCell: UICollectionViewCell {
         }
     }
 
-    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+    public override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         let attributes = super.preferredLayoutAttributesFitting(layoutAttributes)
         
         if shouldUseEqualWidth {

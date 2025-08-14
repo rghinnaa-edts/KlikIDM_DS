@@ -7,14 +7,14 @@
 
 import UIKit
 
-class TabSquareRoundCell: UICollectionViewCell {
+public class TabSquareRoundCell: UICollectionViewCell {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet var vChip: UIView!
     @IBOutlet var lblTitle: UILabel!
     @IBOutlet var vIndicator: UIView!
     
-    var isSelectedState: Bool = false {
+    public var isSelectedState: Bool = false {
         didSet {
             setupBackground(isEnable: isEnable)
         }

@@ -7,13 +7,13 @@
 
 import UIKit
 
-class TabDefaultCell: UICollectionViewCell {
+public class TabDefaultCell: UICollectionViewCell {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet var lblTab: UILabel!
     @IBOutlet var vIndicator: UIView!
     
-    var isSelectedState: Bool = false {
+    public var isSelectedState: Bool = false {
         didSet {
             setupBackground()
         }
@@ -66,7 +66,7 @@ class TabDefaultCell: UICollectionViewCell {
 }
 
 extension TabDefaultCell: TabDefaultCellProtocol {
-    func loadData(item: TabDefaultModelProtocol) {
+    public func loadData(item: TabDefaultModelProtocol) {
         if let data = item as? TabDefaultModel {
             loadData(data)
         } else {
