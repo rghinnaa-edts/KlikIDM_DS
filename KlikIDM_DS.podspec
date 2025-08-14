@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "KlikIDM_DS"
-  spec.version      = "0.1.9"
+  spec.version      = "0.1.10"
   spec.summary      = "UI Components and Animation"
   spec.description  = "UI Components and Animation of Klik Indomaret Apps"
   
