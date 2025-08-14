@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  KlikIDM-DS
+//  KlikIDM_DS
 //
 //  Created by Rizka Ghinna Auliya on 26/02/25.
 //

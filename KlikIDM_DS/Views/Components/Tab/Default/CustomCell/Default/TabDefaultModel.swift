@@ -1,6 +1,6 @@
 //
 //  TabDefaultModel.swift
-//  KlikIDM-DS-UiKit
+//  KlikIDM_DS
 //
 //  Created by Rizka Ghinna Auliya on 10/05/25.
 //

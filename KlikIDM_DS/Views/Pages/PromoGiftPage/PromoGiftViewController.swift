@@ -1,6 +1,6 @@
 //
 //  PromoGiftViewController.swift
-//  KlikIDM-DS-UiKit
+//  KlikIDM_DS
 //
 //  Created by Rizka Ghinna Auliya on 09/05/25.
 //

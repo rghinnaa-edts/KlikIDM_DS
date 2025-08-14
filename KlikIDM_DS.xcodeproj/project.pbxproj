@@ -61,15 +61,11 @@
 		};
 		50A2B7E72E4341E5007A4AE3 /* KlikIDM_DSTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = KlikIDM_DSTests;
 			sourceTree = "<group>";
 		};
 		50A2B7F12E4341E5007A4AE3 /* KlikIDM_DSUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = KlikIDM_DSUITests;
 			sourceTree = "<group>";
 		};
@@ -288,9 +284,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -369,7 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/KlikIDM_DS\"";
+				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KlikIDM_DS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -402,7 +402,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/KlikIDM_DS\"";
+				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KlikIDM_DS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
