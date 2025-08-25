@@ -12,242 +12,218 @@ extension UIColor {
     // Neutral
     
     static var white: UIColor? {
-        return UIColor(named: "White") ?? UIColor.white
+        return UIColor(named: "White")
     }
     
     static var black: UIColor? {
-        return UIColor(named: "Black") ?? UIColor.black
+        return UIColor(named: "Black")
     }
     
     
     // Grey
     
     static var grey10: UIColor? {
-        return UIColor(named: "10Grey") ?? UIColor.gray
+        return UIColor(named: "10Grey")
     }
     
     static var grey20: UIColor? {
-        return UIColor(named: "20Grey") ?? UIColor.gray
+        return UIColor(named: "20Grey")
     }
     
     static var grey30: UIColor? {
-        return UIColor(named: "30Grey") ?? UIColor.gray
+        return UIColor(named: "30Grey")
     }
     
     static var grey40: UIColor? {
-        return UIColor(named: "40Grey") ?? UIColor.gray
+        return UIColor(named: "40Grey")
     }
     
     static var grey50: UIColor? {
-        return UIColor(named: "50Grey") ?? UIColor.gray
+        return UIColor(named: "50Grey")
     }
     
     static var grey60: UIColor? {
-        return UIColor(named: "60Grey") ?? UIColor.gray
+        return UIColor(named: "60Grey")
     }
     
     static var grey70: UIColor? {
-        return UIColor(named: "70Grey") ?? UIColor.gray
+        return UIColor(named: "70Grey")
     }
     
     
     // Blue
     
     static var blue10: UIColor? {
-        return UIColor(named: "10Blue") ?? UIColor.blue
+        return UIColor(named: "10Blue")
     }
     
     static var blue20: UIColor? {
-        return UIColor(named: "20Blue") ?? UIColor.blue
+        return UIColor(named: "20Blue")
     }
     
     static var blue30: UIColor? {
-        return UIColor(named: "30Blue") ?? UIColor.blue
+        return UIColor(named: "30Blue")
     }
     
     static var blue40: UIColor? {
-        return UIColor(named: "40Blue") ?? UIColor.blue
+        return UIColor(named: "40Blue")
     }
     
     static var blue50: UIColor? {
-        return UIColor(named: "50Blue") ?? UIColor.blue
+        return UIColor(named: "50Blue")
     }
     
     static var blue60: UIColor? {
-        return UIColor(named: "60Blue") ?? UIColor.blue
+        return UIColor(named: "60Blue")
     }
     
     static var blue70: UIColor? {
-        return UIColor(named: "70Blue") ?? UIColor.blue
+        return UIColor(named: "70Blue")
     }
     
     
     // Yellow
     
     static var yellow10: UIColor? {
-        return UIColor(named: "10Yellow") ?? UIColor.yellow
+        return UIColor(named: "10Yellow")
     }
     
     static var yellow20: UIColor? {
-        return UIColor(named: "20Yellow") ?? UIColor.yellow
+        return UIColor(named: "20Yellow")
     }
     
     static var yellow30: UIColor? {
-        return UIColor(named: "30Yellow") ?? UIColor.yellow
+        return UIColor(named: "30Yellow")
     }
     
     static var yellow40: UIColor? {
-        return UIColor(named: "40Yellow") ?? UIColor.yellow
+        return UIColor(named: "40Yellow")
     }
     
     static var yellow50: UIColor? {
-        return UIColor(named: "50Yellow") ?? UIColor.yellow
+        return UIColor(named: "50Yellow")
     }
     
     
     // Red
     
     static var red10: UIColor? {
-        return UIColor(named: "10Red") ?? UIColor.red
+        return UIColor(named: "10Red")
     }
     
     static var red20: UIColor? {
-        return UIColor(named: "20Red") ?? UIColor.red
+        return UIColor(named: "20Red")
     }
     
     static var red30: UIColor? {
-        return UIColor(named: "30Red") ?? UIColor.red
+        return UIColor(named: "30Red")
     }
     
     static var red40: UIColor? {
-        return UIColor(named: "40Red") ?? UIColor.red
+        return UIColor(named: "40Red")
     }
     
     static var red50: UIColor? {
-        return UIColor(named: "50Red") ?? UIColor.red
+        return UIColor(named: "50Red")
     }
     
     
     // Green
     
     static var green10: UIColor? {
-        return UIColor(named: "10Green") ?? UIColor.green
+        return UIColor(named: "10Green")
     }
     
     static var green20: UIColor? {
-        return UIColor(named: "20Green") ?? UIColor.green
+        return UIColor(named: "20Green")
     }
     
     static var green30: UIColor? {
-        return UIColor(named: "30Green") ?? UIColor.green
+        return UIColor(named: "30Green")
     }
     
     static var green40: UIColor? {
-        return UIColor(named: "40Green") ?? UIColor.green
+        return UIColor(named: "40Green")
     }
     
     static var green50: UIColor? {
-        return UIColor(named: "50Green") ?? UIColor.green
+        return UIColor(named: "50Green")
     }
     
     
     // Orange
     
     static var orange10: UIColor? {
-        return UIColor(named: "10Orange") ?? UIColor.orange
+        return UIColor(named: "10Orange")
     }
     
     static var orange20: UIColor? {
-        return UIColor(named: "20Orange") ?? UIColor.orange
+        return UIColor(named: "20Orange")
     }
     
     static var orange30: UIColor? {
-        return UIColor(named: "30Orange") ?? UIColor.orange
+        return UIColor(named: "30Orange")
     }
     
     static var orange40: UIColor? {
-        return UIColor(named: "40Orange") ?? UIColor.orange
+        return UIColor(named: "40Orange")
     }
     
     static var orange50: UIColor? {
-        return UIColor(named: "50Orange") ?? UIColor.orange
+        return UIColor(named: "50Orange")
     }
     
     
     // Button
     
     static var blueDefault: UIColor? {
-        return UIColor(named: "DefaultBlue") ?? UIColor.blue
+        return UIColor(named: "DefaultBlue")
     }
     
     static var bluePressed: UIColor? {
-        return UIColor(named: "PressedBlue") ?? UIColor.blue
+        return UIColor(named: "PressedBlue")
     }
     
     static var greyDefault: UIColor? {
-        return UIColor(named: "DefaultGrey") ?? UIColor.gray
+        return UIColor(named: "DefaultGrey")
     }
     
     static var greyPressed: UIColor? {
-        return UIColor(named: "PressedGrey") ?? UIColor.gray
+        return UIColor(named: "PressedGrey")
     }
     
     static var greyText: UIColor? {
-        return UIColor(named: "TextGrey") ?? UIColor.gray
+        return UIColor(named: "TextGrey")
     }
     
     static var cartDefault: UIColor? {
-        return UIColor(named: "DefaultCart") ?? UIColor.orange
+        return UIColor(named: "DefaultCart")
     }
     
     static var cartPressed: UIColor? {
-        return UIColor(named: "PressedCart") ?? UIColor.orange
+        return UIColor(named: "PressedCart")
     }
     
     static var disabled: UIColor? {
-        return UIColor(named: "Disable") ?? UIColor.gray
+        return UIColor(named: "Disable")
     }
     
-    // Support //
-    
-    static var errorStrong: UIColor? {
-        return UIColor(named: "StrongError") ?? UIColor.red
+    struct Support {
+        static let errorStrong = UIColor(named: "Error-Strong")
+        static let errorWeak = UIColor(named: "Error-Weak")
+        static let successStrong = UIColor(named: "Success-Strong")
+        static let successWeak = UIColor(named: "Success-Weak")
+        static let warningStrong = UIColor(named: "Warning-Strong")
+        static let warningWeak = UIColor(named: "Warning-Weak")
     }
     
-    static var errorWeak: UIColor? {
-        return UIColor(named: "WeakError") ?? UIColor.red
+    struct Brand {
+        static let xtra = UIColor(named: "Xtra")
+        static let xpress = UIColor(named: "Xpress")
     }
     
-    static var successStrong: UIColor? {
-        return UIColor(named: "StrongSuccess") ?? UIColor.green
-    }
-    
-    static var successWeak: UIColor? {
-        return UIColor(named: "WeakSuccess") ?? UIColor.green
-    }
-    
-    static var warningStrong: UIColor? {
-        return UIColor(named: "StrongWarning") ?? UIColor.yellow
-    }
-    
-    static var warningWeak: UIColor? {
-        return UIColor(named: "WeakWarning") ?? UIColor.yellow
-    }
-    
-    // Brand //
-    
-    static var xtra: UIColor? {
-        return UIColor(named: "Xtra") ?? UIColor.blue
-    }
-    
-    static var xpress: UIColor? {
-        return UIColor(named: "Xpress") ?? UIColor.orange
-    }
-    
-    // Gradient //
-    
-    public struct Gradient {
-        public static let sunset = UIKitGradient(
+    struct Gradient {
+        static let sunset = UIKitGradient(
             colors: [
                 UIColor(named: "Sunset-Leading") ?? .systemOrange,
                 UIColor(named: "Sunset-Trailing") ?? .systemRed
@@ -256,7 +232,7 @@ extension UIColor {
             endPoint: .trailing
         )
         
-        public static let skyblue = UIKitGradient(
+        static let skyblue = UIKitGradient(
             colors: [
                 UIColor(named: "Skyblue-Leading") ?? .systemBlue,
                 UIColor(named: "Skyblue-Trailing") ?? .systemTeal
@@ -265,7 +241,7 @@ extension UIColor {
             endPoint: .trailing
         )
         
-        public static let greenforest = UIKitGradient(
+        static let greenforest = UIKitGradient(
             colors: [
                 UIColor(named: "Greenforest-Leading") ?? .systemGreen,
                 UIColor(named: "Greenforest-Trailing") ?? .systemGreen
@@ -274,7 +250,7 @@ extension UIColor {
             endPoint: .trailing
         )
         
-        public static let sunflower = UIKitGradient(
+        static let sunflower = UIKitGradient(
             colors: [
                 UIColor(named: "Sunflower-Leading") ?? .systemYellow,
                 UIColor(named: "Sunflower-Trailing") ?? .systemOrange
@@ -284,7 +260,7 @@ extension UIColor {
         )
     }
     
-    public struct UIKitGradient {
+    struct UIKitGradient {
         let colors: [UIColor]
         let startPoint: GradientPoint
         let endPoint: GradientPoint

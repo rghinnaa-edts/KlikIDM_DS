@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50A2B92F2E44645A007A4AE3 /* KlikIDM_DS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 50A2B92E2E446451007A4AE3 /* KlikIDM_DS.podspec */; };
-		CCFC5D2F8C84381A16A98567 /* Pods_KlikIDM_DS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE9F5D0C077C3C5CDA874C3 /* Pods_KlikIDM_DS.framework */; };
+		EBBB03BD574BA7C4B2F04237 /* Pods_KlikIDM_DS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4902D386FD852B5C481BA3CC /* Pods_KlikIDM_DS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,15 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EE9F5D0C077C3C5CDA874C3 /* Pods_KlikIDM_DS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KlikIDM_DS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB521E3AC525165BE4AC7E8 /* Pods-KlikIDM_DS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM_DS.release.xcconfig"; path = "Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS.release.xcconfig"; sourceTree = "<group>"; };
+		4902D386FD852B5C481BA3CC /* Pods_KlikIDM_DS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KlikIDM_DS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A2B7CE2E4341E2007A4AE3 /* KlikIDM_DS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KlikIDM_DS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A2B7E42E4341E5007A4AE3 /* KlikIDM_DSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlikIDM_DSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A2B7EE2E4341E5007A4AE3 /* KlikIDM_DSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlikIDM_DSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A2B92E2E446451007A4AE3 /* KlikIDM_DS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KlikIDM_DS.podspec; sourceTree = "<group>"; };
-		854AA0A2F8FC6FF28B65D73C /* Pods-KlikIDM-DS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM-DS.release.xcconfig"; path = "Target Support Files/Pods-KlikIDM-DS/Pods-KlikIDM-DS.release.xcconfig"; sourceTree = "<group>"; };
-		8690CE451369698488AB0039 /* Pods-KlikIDM_DS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM_DS.release.xcconfig"; path = "Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS.release.xcconfig"; sourceTree = "<group>"; };
-		DACD0C03B747E99A1D35BA81 /* Pods-KlikIDM_DS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM_DS.debug.xcconfig"; path = "Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS.debug.xcconfig"; sourceTree = "<group>"; };
-		E5500D139A39871A091D8D33 /* Pods-KlikIDM-DS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM-DS.debug.xcconfig"; path = "Target Support Files/Pods-KlikIDM-DS/Pods-KlikIDM-DS.debug.xcconfig"; sourceTree = "<group>"; };
+		F4FB904FA114465C1F256D99 /* Pods-KlikIDM_DS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM_DS.debug.xcconfig"; path = "Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -61,15 +59,11 @@
 		};
 		50A2B7E72E4341E5007A4AE3 /* KlikIDM_DSTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = KlikIDM_DSTests;
 			sourceTree = "<group>";
 		};
 		50A2B7F12E4341E5007A4AE3 /* KlikIDM_DSUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = KlikIDM_DSUITests;
 			sourceTree = "<group>";
 		};
@@ -80,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCFC5D2F8C84381A16A98567 /* Pods_KlikIDM_DS.framework in Frameworks */,
+				EBBB03BD574BA7C4B2F04237 /* Pods_KlikIDM_DS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,14 +95,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FFE9B82A0D3F16F34C62CC3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0EE9F5D0C077C3C5CDA874C3 /* Pods_KlikIDM_DS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		50A2B7C52E4341E2007A4AE3 = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +104,7 @@
 				50A2B7F12E4341E5007A4AE3 /* KlikIDM_DSUITests */,
 				50A2B7CF2E4341E2007A4AE3 /* Products */,
 				86AD923C032A21AA3AAD3574 /* Pods */,
-				2FFE9B82A0D3F16F34C62CC3 /* Frameworks */,
+				CD7602EF0C8DAA9FFFE20615 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,12 +121,18 @@
 		86AD923C032A21AA3AAD3574 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E5500D139A39871A091D8D33 /* Pods-KlikIDM-DS.debug.xcconfig */,
-				854AA0A2F8FC6FF28B65D73C /* Pods-KlikIDM-DS.release.xcconfig */,
-				DACD0C03B747E99A1D35BA81 /* Pods-KlikIDM_DS.debug.xcconfig */,
-				8690CE451369698488AB0039 /* Pods-KlikIDM_DS.release.xcconfig */,
+				F4FB904FA114465C1F256D99 /* Pods-KlikIDM_DS.debug.xcconfig */,
+				0AB521E3AC525165BE4AC7E8 /* Pods-KlikIDM_DS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD7602EF0C8DAA9FFFE20615 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4902D386FD852B5C481BA3CC /* Pods_KlikIDM_DS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,11 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50A2B7F72E4341E5007A4AE3 /* Build configuration list for PBXNativeTarget "KlikIDM_DS" */;
 			buildPhases = (
-				3C054907582B9C3DF0981399 /* [CP] Check Pods Manifest.lock */,
+				5052EBD7C21EDEC5BF4B2293 /* [CP] Check Pods Manifest.lock */,
 				50A2B7CA2E4341E2007A4AE3 /* Sources */,
 				50A2B7CB2E4341E2007A4AE3 /* Frameworks */,
 				50A2B7CC2E4341E2007A4AE3 /* Resources */,
-				0EDF37FB077BEFBA053A96B9 /* [CP] Embed Pods Frameworks */,
+				C8A3285636D457049303B635 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,24 +272,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0EDF37FB077BEFBA053A96B9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3C054907582B9C3DF0981399 /* [CP] Check Pods Manifest.lock */ = {
+		5052EBD7C21EDEC5BF4B2293 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,6 +292,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A3285636D457049303B635 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -361,7 +357,7 @@
 /* Begin XCBuildConfiguration section */
 		50A2B7F82E4341E5007A4AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DACD0C03B747E99A1D35BA81 /* Pods-KlikIDM_DS.debug.xcconfig */;
+			baseConfigurationReference = F4FB904FA114465C1F256D99 /* Pods-KlikIDM_DS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -394,7 +390,7 @@
 		};
 		50A2B7F92E4341E5007A4AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8690CE451369698488AB0039 /* Pods-KlikIDM_DS.release.xcconfig */;
+			baseConfigurationReference = 0AB521E3AC525165BE4AC7E8 /* Pods-KlikIDM_DS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -61,9 +61,7 @@ public class TabDefault: UIView {
     }
 
     private func setupChip() {
-        let bundle = Bundle(for: type(of: self))
-        
-        if let nib = bundle.loadNibNamed("TabDefault", owner: self, options: nil),
+        if let nib = Bundle.main.loadNibNamed("TabDefault", owner: self, options: nil),
            let card = nib.first as? UIView {
             containerView = card
             containerView.frame = bounds
@@ -72,7 +70,7 @@ public class TabDefault: UIView {
             
             setupUI()
         } else {
-            print("Failed to load TabDefault XIB from bundle: \(bundle)")
+            print("Failed to load TabDefault XIB")
         }
     }
     
@@ -172,7 +170,9 @@ public class TabDefault: UIView {
         }
         
         if useDynamicWidth {
-            self.collectionView.performBatchUpdates(nil, completion: nil)
+            DispatchQueue.main.async {
+                self.collectionView.performBatchUpdates(nil, completion: nil)
+            }
         }
     }
     
@@ -238,9 +238,17 @@ extension TabDefault: UICollectionViewDelegate, UICollectionViewDataSource, UICo
         let selectedData = data[indexPath.item].id
         currentlySelectedBucketId = selectedData
         
+        if useDynamicWidth {
+            UIView.animate(withDuration: 0.3) {
+                self.collectionView.performBatchUpdates(nil, completion: nil)
+            }
+        }
+        
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             let cellFrame = flowLayout.layoutAttributesForItem(at: indexPath)?.frame ?? .zero
+            
             let contentOffsetX = cellFrame.midX - (collectionView.bounds.width / 2)
+            
             let adjustedOffsetX = max(0, min(contentOffsetX,
                                              collectionView.contentSize.width - collectionView.bounds.width))
             

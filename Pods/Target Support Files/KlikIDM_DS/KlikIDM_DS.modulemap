@@ -1,0 +1,6 @@
+framework module KlikIDM_DS {
+  umbrella header "KlikIDM_DS-umbrella.h"
+
+  export *
+  module * { export * }
+}

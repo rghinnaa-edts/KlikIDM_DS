@@ -41,91 +41,18 @@ public class TabQuadRound: UIView {
             self.setupUI()
         }
     }
-    
-    public func selectTab(at index: Int) {
-        guard index >= 0 && index < data.count else { return }
-
-        currentlySelectedIndex = index
-        currentlySelectedId = data[index].id
-        let targetIndexPath = IndexPath(item: index, section: 0)
-        
-        for index in 0..<data.count {
-            let indexPath = IndexPath(item: index, section: 0)
-            if let cell = collectionView.cellForItem(at: indexPath) as? TabQuadRoundCell {
-                if shouldUseEqualWidth() {
-                    cell.shouldUseEqualWidth = true
-                }
-                cell.isSelectedState = (index == 0)
-                cell.isBeforeSelectedState = (index == (0 - 1))
-                cell.isAfterSelectedState = (index == (index + 1))
-                cell.isFirstItem = (index == 0)
-                cell.isLastItem = (index == (data.count - 1))
-            }
-        }
-
-        if shouldUseEqualWidth() {
-            if data.count > 3 && collectionView.isScrollEnabled {
-                collectionView.collectionViewLayout.invalidateLayout()
-
-                UIView.animate(withDuration: 0.3) {
-                    self.collectionView.performBatchUpdates(nil) { _ in
-                        self.scrollToCenter(at: targetIndexPath)
-                    }
-                }
-            }
-        } else {
-            collectionView.collectionViewLayout.invalidateLayout()
-
-            UIView.animate(withDuration: 0.3) {
-                self.collectionView.performBatchUpdates(nil) { _ in
-                    if self.data.count > 3 {
-                        self.scrollToCenter(at: targetIndexPath)
-                    }
-                }
-            }
-        }
-        collectionView.reloadData()
-    }
-    
-    public func setData(_ tabData: [TabQuadRoundModel]) {
-        self.data = tabData
-    }
-    
-    public func selectDefaultTab() {
-        guard !data.isEmpty else { return }
-
-        currentlySelectedId = data[0].id
-        currentlySelectedIndex = 0
-        
-        for index in 0..<data.count {
-            let indexPath = IndexPath(item: index, section: 0)
-            if let cell = collectionView.cellForItem(at: indexPath) as? TabQuadRoundCell {
-                if shouldUseEqualWidth() {
-                    cell.shouldUseEqualWidth = true
-                }
-                cell.isSelectedState = (index == 0)
-                cell.isBeforeSelectedState = (index == (0 - 1))
-                cell.isAfterSelectedState = (index == (index + 1))
-                cell.isFirstItem = (index == 0)
-                cell.isLastItem = (index == (data.count - 1))
-            }
-        }
-        collectionView.reloadData()
-    }
 
     private func setupTab() {
-        let bundle = Bundle(for: type(of: self))
-        
-        if let nib = bundle.loadNibNamed("TabQuadRound", owner: self, options: nil),
+        if let nib = Bundle.main.loadNibNamed("TabQuadRound", owner: self, options: nil),
            let card = nib.first as? UIView {
             containerView = card
             containerView.frame = bounds
             containerView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             addSubview(containerView)
-            
+
             setupUI()
         } else {
-            print("Failed to load TabQuadRound XIB from bundle: \(bundle)")
+            print("Failed to load TabQuadRound XIB")
         }
     }
 
@@ -226,17 +153,88 @@ public class TabQuadRound: UIView {
         }
     }
 
+    func selectDefaultTab() {
+        guard !data.isEmpty else { return }
+
+        currentlySelectedId = data[0].id
+        currentlySelectedIndex = 0
+        
+        for index in 0..<data.count {
+            let indexPath = IndexPath(item: index, section: 0)
+            if let cell = collectionView.cellForItem(at: indexPath) as? TabQuadRoundCell {
+                if shouldUseEqualWidth() {
+                    cell.shouldUseEqualWidth = true
+                }
+                cell.isSelectedState = (index == 0)
+                cell.isBeforeSelectedState = (index == (0 - 1))
+                cell.isAfterSelectedState = (index == (index + 1))
+                cell.isFirstItem = (index == 0)
+                cell.isLastItem = (index == (data.count - 1))
+            }
+        }
+        collectionView.reloadData()
+    }
+
+    public func selectTab(at index: Int) {
+        guard index >= 0 && index < data.count else { return }
+
+        currentlySelectedIndex = index
+        currentlySelectedId = data[index].id
+        let targetIndexPath = IndexPath(item: index, section: 0)
+        
+        for index in 0..<data.count {
+            let indexPath = IndexPath(item: index, section: 0)
+            if let cell = collectionView.cellForItem(at: indexPath) as? TabQuadRoundCell {
+                if shouldUseEqualWidth() {
+                    cell.shouldUseEqualWidth = true
+                }
+                cell.isSelectedState = (index == 0)
+                cell.isBeforeSelectedState = (index == (0 - 1))
+                cell.isAfterSelectedState = (index == (index + 1))
+                cell.isFirstItem = (index == 0)
+                cell.isLastItem = (index == (data.count - 1))
+            }
+        }
+
+        if shouldUseEqualWidth() {
+            if data.count > 3 && collectionView.isScrollEnabled {
+                collectionView.collectionViewLayout.invalidateLayout()
+
+                UIView.animate(withDuration: 0.3) {
+                    self.collectionView.performBatchUpdates(nil) { _ in
+                        self.scrollToCenter(at: targetIndexPath)
+                    }
+                }
+            }
+        } else {
+            collectionView.collectionViewLayout.invalidateLayout()
+
+            UIView.animate(withDuration: 0.3) {
+                self.collectionView.performBatchUpdates(nil) { _ in
+                    if self.data.count > 3 {
+                        self.scrollToCenter(at: targetIndexPath)
+                    }
+                }
+            }
+        }
+        collectionView.reloadData()
+    }
+
     private func scrollToCenter(at indexPath: IndexPath) {
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             let cellFrame = flowLayout.layoutAttributesForItem(at: indexPath)?.frame ?? .zero
-            
+
             let contentOffsetX = cellFrame.midX - (collectionView.bounds.width / 2)
-            
+
             let adjustedOffsetX = max(0, min(contentOffsetX,
                                              collectionView.contentSize.width - collectionView.bounds.width))
-            
+
             collectionView.setContentOffset(CGPoint(x: adjustedOffsetX, y: 0), animated: true)
         }
+    }
+
+    public func setData(_ tabData: [TabQuadRoundModel]) {
+        self.data = tabData
     }
 }
 
@@ -244,12 +242,6 @@ public struct TabQuadRoundModel {
     var id: String
     var title: String
     var badge: Int
-    
-    public init(id: String, title: String, badge: Int) {
-        self.id = id
-        self.title = title
-        self.badge = badge
-    }
 }
 
 @MainActor
@@ -331,6 +323,7 @@ extension TabQuadRound: UICollectionViewDelegate, UICollectionViewDataSource, UI
     }
 
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
         let selectedData = data[indexPath.item]
         currentlySelectedId = selectedData.id
         currentlySelectedIndex = indexPath.item
