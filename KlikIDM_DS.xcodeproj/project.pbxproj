@@ -34,7 +34,7 @@
 		50A2B7CE2E4341E2007A4AE3 /* KlikIDM_DS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KlikIDM_DS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A2B7E42E4341E5007A4AE3 /* KlikIDM_DSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlikIDM_DSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A2B7EE2E4341E5007A4AE3 /* KlikIDM_DSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlikIDM_DSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50A2B92E2E446451007A4AE3 /* KlikIDM_DS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KlikIDM_DS.podspec; sourceTree = "<group>"; };
+		50A2B92E2E446451007A4AE3 /* KlikIDM_DS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KlikIDM_DS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F4FB904FA114465C1F256D99 /* Pods-KlikIDM_DS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikIDM_DS.debug.xcconfig"; path = "Target Support Files/Pods-KlikIDM_DS/Pods-KlikIDM_DS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

@@ -62,7 +62,6 @@ public class TabDefault: UIView {
 
     private func setupChip() {
         let bundle = Bundle(for: type(of: self))
-        
         if let nib = bundle.loadNibNamed("TabDefault", owner: self, options: nil),
            let card = nib.first as? UIView {
             containerView = card
@@ -156,7 +155,7 @@ public class TabDefault: UIView {
     
     public func selectDefaultChip() {
         guard !data.isEmpty else { return }
-                
+                        
         let defaultSelectedIndexPath = IndexPath(item: 0, section: 0)
         currentlySelectedBucketId = data[0].id
         
@@ -171,9 +170,7 @@ public class TabDefault: UIView {
             cell.isSelectedState = true
         }
         
-        if useDynamicWidth {
-            self.collectionView.performBatchUpdates(nil, completion: nil)
-        }
+        self.collectionView.scrollToItem(at: defaultSelectedIndexPath, at: .centeredHorizontally, animated: false)
     }
     
 }
@@ -247,7 +244,7 @@ extension TabDefault: UICollectionViewDelegate, UICollectionViewDataSource, UICo
             collectionView.setContentOffset(CGPoint(x: adjustedOffsetX, y: 0), animated: true)
         }
         
-        delegate?.didSelectTabDefault(at: indexPath.item, withId: selectedData)
+        self.delegate?.didSelectTabDefault(at: indexPath.item, withId: selectedData)
     }
 }
 
