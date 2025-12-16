@@ -15,8 +15,7 @@ class ViewController: UIViewController {
 //    }
     
 //    @IBAction func GoToPromo(_ sender: Any) {
-//        let vc = UIStoryboard(name: "PromoGiftViewController", bundle: nil).instantiateViewController(withIdentifier: "PromoGiftPage")
-//        navigationController?.pushViewController(vc, animated: true)
+
 //    }
 //    
 //    @IBAction func GoToCart(_ sender: Any) {

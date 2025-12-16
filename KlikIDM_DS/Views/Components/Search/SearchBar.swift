@@ -1,8 +1,8 @@
 //
 //  Search.swift
-//  Poinku-DS
+//  KlikIDM-DS
 //
-//  Created by Rizka Ghinna Auliya on 18/03/25.
+//  Created by Rizka Ghinna Auliya on 11/12/25.
 //
 
 import UIKit
@@ -23,7 +23,7 @@ public class SearchBar: UISearchBar {
         }
     }
     
-    public var fieldBackgroundColor: UIColor = .white {
+    public var fieldBackgroundColor: UIColor? = UIColor.white {
         didSet {
             if let textField = getSearchTextField() {
                 textField.backgroundColor = fieldBackgroundColor
@@ -85,7 +85,7 @@ public class SearchBar: UISearchBar {
             
             textField.layer.borderWidth = 1
             textField.layer.cornerRadius = 8
-            textField.layer.borderColor = UIColor.grey30.cgColor
+            textField.layer.borderColor = UIColor.grey30?.cgColor
             
             textField.clipsToBounds = true
             textField.backgroundColor = fieldBackgroundColor
@@ -243,13 +243,13 @@ public class SearchBar: UISearchBar {
 extension SearchBar: UISearchBarDelegate {
     public func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         if let textField = getSearchTextField() {
-            textField.layer.borderColor = UIColor.blue10.cgColor
+            textField.layer.borderColor = UIColor.blue10?.cgColor
         }
     }
     
     public func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         if let textField = getSearchTextField() {
-            textField.layer.borderColor = UIColor.grey30.cgColor
+            textField.layer.borderColor = UIColor.grey30?.cgColor
         }
     }
     
@@ -263,7 +263,7 @@ extension SearchBar: UISearchBarDelegate {
         searchBar.text = ""
         
         if let textField = getSearchTextField() {
-            textField.layer.borderColor = UIColor.grey30.cgColor
+            textField.layer.borderColor = UIColor.grey30?.cgColor
         }
     }
 }

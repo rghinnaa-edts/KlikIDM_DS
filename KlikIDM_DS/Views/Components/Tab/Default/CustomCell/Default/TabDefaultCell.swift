@@ -9,13 +9,32 @@ import UIKit
 
 public class TabDefaultCell: UICollectionViewCell {
     
-    @IBOutlet var containerView: UIView!
-    @IBOutlet var lblTab: UILabel!
-    @IBOutlet var vIndicator: UIView!
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var lblTab: UILabel!
+    @IBOutlet weak var vIndicator: UIView!
     
     public var isSelectedState: Bool = false {
         didSet {
-            setupBackground()
+            setupTextColor()
+            setupIndicator()
+        }
+    }
+    
+    public var tabIndicatorColor: UIColor? = UIColor.blue50 {
+        didSet {
+            vIndicator.backgroundColor = tabIndicatorColor
+        }
+    }
+    
+    public var tabTextColor: UIColor? = UIColor.blue50 {
+        didSet {
+            setupTextColor()
+        }
+    }
+    
+    public var tabTextActiveColor: UIColor? = UIColor.blue50 {
+        didSet {
+            setupTextColor()
         }
     }
     
@@ -45,19 +64,21 @@ public class TabDefaultCell: UICollectionViewCell {
     }
     
     private func setupUI() {
-        setupBackground()
-        
-        vIndicator.layer.cornerRadius = 2
+        setupTextColor()
+        setupIndicator()
     }
     
-    private func setupBackground() {
-        vIndicator.isHidden = !isSelectedState
-        
+    private func setupTextColor() {
         if isSelectedState {
-            lblTab.textColor = UIColor.blue50
+            lblTab.textColor = tabTextActiveColor
         } else {
-            lblTab.textColor = UIColor.grey40
+            lblTab.textColor = tabTextColor
         }
+    }
+    
+    private func setupIndicator() {
+        vIndicator.layer.cornerRadius = 2
+        vIndicator.isHidden = !isSelectedState
     }
     
     func loadData(_ data: TabDefaultModel) {

@@ -71,7 +71,7 @@ class PromoGiftViewController: UIViewController {
     }
     
     private func setupTabTop() {
-        vTabTop.setData(tabItems)
+        vTabTop.data = tabItems
         vTabTop.delegate = self
     }
     
@@ -83,15 +83,15 @@ class PromoGiftViewController: UIViewController {
         vTab.delegate = self
         
         vTab.registerCellType(TabDefaultCell.self, withIdentifier: "TabDefaultCell")
-        vTab.setData(getCurrentContentItems().map { $0.chip })
+        vTab.data = getCurrentContentItems().map { $0.chip }
         
         vTab.enableDynamicWidth()
-        vTab.selectDefaultChip()
+        vTab.selectDefaultTab()
     }
     
     private func updateTabSelection() {
         vTab.data = getCurrentContentItems().map { $0.chip }
-        vTab.selectDefaultChip()
+        vTab.selectDefaultTab()
     }
     
     private func setupATC() {

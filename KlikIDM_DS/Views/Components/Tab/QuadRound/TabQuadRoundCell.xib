@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabQuadRoundCell" customModule="KlikIDM_DS_UiKit" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabQuadRoundCell" customModule="KlikIDM_DS" customModuleProvider="target">
             <connections>
                 <outlet property="badgeTab" destination="FhN-dH-cC8" id="f5k-IT-GMi"/>
                 <outlet property="containerView" destination="tJb-4B-bPH" id="vjy-2k-9Bz"/>
@@ -114,7 +114,9 @@
                         <constraint firstAttribute="trailing" secondItem="A3G-B0-tdT" secondAttribute="trailing" id="Woq-PE-Ztf"/>
                         <constraint firstAttribute="height" constant="28" id="Xxx-Pk-ulM"/>
                         <constraint firstItem="A3G-B0-tdT" firstAttribute="leading" secondItem="c5J-k7-aDb" secondAttribute="leading" id="ckc-36-DlX"/>
+                        <constraint firstAttribute="trailing" secondItem="A3G-B0-tdT" secondAttribute="trailing" constant="8" id="eVD-6V-Q94"/>
                         <constraint firstItem="A3G-B0-tdT" firstAttribute="centerX" secondItem="c5J-k7-aDb" secondAttribute="centerX" id="ws5-xv-2ax"/>
+                        <constraint firstItem="A3G-B0-tdT" firstAttribute="leading" secondItem="c5J-k7-aDb" secondAttribute="leading" constant="8" id="xGU-ix-NzF"/>
                     </constraints>
                 </view>
             </subviews>

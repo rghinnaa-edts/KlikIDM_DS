@@ -7,14 +7,14 @@
 
 import UIKit
 
-public protocol StaggeredLayoutDelegate: AnyObject {
+public protocol StraggeredCollectionLayoutDelegate: AnyObject {
     func collectionView(_ collectionView: UICollectionView, heightForItemAt indexPath: IndexPath, width: CGFloat) -> CGFloat
 }
 
-public class StaggeredLayout: UICollectionViewLayout {
+public class StraggeredCollectionLayout: UICollectionViewLayout {
     
     // MARK: - Properties
-    public weak var delegate: StaggeredLayoutDelegate?
+    public weak var delegate: StraggeredCollectionLayoutDelegate?
     
     private var numberOfColumns: Int = 2
     private var cellPadding: CGFloat = 6

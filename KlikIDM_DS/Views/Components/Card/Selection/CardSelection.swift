@@ -8,25 +8,37 @@
 import UIKit
 
 @IBDesignable
-class SelectionCard: UIView {
+public class CardSelection: UIView {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDesc: UILabel!
     
-    @IBInspectable public var cardTitle: String = "Title" {
+    @IBInspectable public var cardTitle: String? {
         didSet {
             lblTitle.text = cardTitle
         }
     }
     
-    @IBInspectable public var cardDescription: String = "Description" {
+    @IBInspectable public var cardDescription: String? {
         didSet {
             lblDesc.text = cardDescription
         }
     }
     
-    @IBInspectable public var cardBackgroundColor: UIColor? = .white {
+    @IBInspectable public var cardTitleColor: UIColor? {
+        didSet {
+            lblTitle.textColor = cardTitleColor
+        }
+    }
+    
+    @IBInspectable public var cardDescColor: UIColor? {
+        didSet {
+            lblDesc.textColor = cardDescColor
+        }
+    }
+    
+    @IBInspectable public var cardBackgroundColor: UIColor? {
         didSet {
             containerView.backgroundColor = cardBackgroundColor
         }
@@ -38,9 +50,9 @@ class SelectionCard: UIView {
         }
     }
     
-    @IBInspectable public var cardBorderColor: UIColor = UIColor.blueDefault ?? .blue {
+    @IBInspectable public var cardBorderColor: UIColor? = UIColor.blueDefault {
         didSet {
-            containerView.layer.borderColor = cardBorderColor.cgColor
+            containerView.layer.borderColor = cardBorderColor?.cgColor
         }
     }
     
@@ -72,10 +84,6 @@ class SelectionCard: UIView {
         super.init(frame: frame)
         
         setupNib()
-        
-//        containerStickPromoGift.layer.shadowOpacity = 0.15
-//        containerStickPromoGift.layer.shadowOffset = CGSize(width: 0, height: 5)
-//        containerStickPromoGift.layer.shadowRadius = 3
     }
     
     required public init?(coder: NSCoder) {
@@ -86,16 +94,35 @@ class SelectionCard: UIView {
     
     private func setupNib() {
         let bundle = Bundle(for: type(of: self))
-        if let nib = bundle.loadNibNamed("SelectionCard", owner: self, options: nil),
+        if let nib = bundle.loadNibNamed("CardSelection", owner: self, options: nil),
            let view = nib.first as? UIView {
             containerView = view
             addSubview(containerView)
             containerView.frame = bounds
             containerView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            
         } else {
-            print("Failed to load Chip XIB")
+            print("Failed to load Card Selection XIB")
         }
     }
     
+    public func animateCardSelection(
+        fromBorderColor: UIColor?,
+        toBorderColor: UIColor?,
+        toBackgroundColor: UIColor?,
+        animated: Bool = true
+    ) {
+        let animationDuration: TimeInterval = 0.3
+        
+        let borderAnimation = CABasicAnimation(keyPath: "borderColor")
+        borderAnimation.fromValue = fromBorderColor?.cgColor
+        borderAnimation.toValue = toBorderColor?.cgColor
+        borderAnimation.duration = animationDuration
+        borderAnimation.timingFunction = CAMediaTimingFunction(name: .easeOut)
+        containerView.layer.add(borderAnimation, forKey: "borderAnimation")
+        containerView.layer.borderColor = toBorderColor?.cgColor
+        
+        UIView.animate(withDuration: animationDuration, delay: 0, options: .curveEaseOut) {
+            self.containerView.backgroundColor = toBackgroundColor
+        }
+    }
 }
